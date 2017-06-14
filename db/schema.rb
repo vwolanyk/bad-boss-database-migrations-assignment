@@ -10,14 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170614025731) do
+ActiveRecord::Schema.define(version: 20170614030555) do
 
   create_table "locations", force: :cascade do |t|
-    t.string   "name"
     t.string   "city"
-    t.integer  "staff_number"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "weather"
   end
 
   create_table "parts", force: :cascade do |t|
